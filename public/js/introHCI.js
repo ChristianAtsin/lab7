@@ -11,3 +11,8 @@ $(document).ready(function() {
 function initializePage() {
 	// your code here
 }
+
+$('.likeBtn').click(analyse);
+function analyse(event) {
+	ga("send", "event", 'like', 'click');
+}
